@@ -6,6 +6,7 @@ import { GrPlayFill, GrCertificate } from "react-icons/gr";
 import { AiOutlineCode, AiOutlineMail } from "react-icons/ai";
 import Service from "../component/Service";
 import About from "../component/About";
+import Achievement from "../component/Achievement";
 
 const Home = () => {
   return (
@@ -82,6 +83,9 @@ const Home = () => {
 
       <div className="service-section">
         <Service />
+      </div>
+      <div className="achievement-section">
+        <Achievement />
       </div>
     </>
   );
