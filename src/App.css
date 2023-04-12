@@ -683,7 +683,7 @@
 }
 
 .footer-section .footer-content .footer-top .newsletter p {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
   font-size: 17px;
 }
 
@@ -694,7 +694,16 @@
 .footer-section .footer-content .footer-top .newsletter .subscribe-input input,
 .footer-section .footer-content .footer-top .newsletter .subscribe-input button {
   width: fit-content;
+  font-size: 17px;
   padding: 1rem;
+  border: none;
+  outline: none;
+
+}
+
+.footer-section .footer-content .footer-top .newsletter .subscribe-input button {
+  background: #2fb4ae;
+  color: #fff;
 }
 
 .footer-section .footer-content .footer-bottom {
