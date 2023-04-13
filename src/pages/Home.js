@@ -6,6 +6,10 @@ import { GrPlayFill, GrCertificate } from "react-icons/gr";
 import { AiOutlineCode, AiOutlineMail } from "react-icons/ai";
 import Service from "../component/Service";
 import About from "../component/About";
+import Achievement from "../component/Achievement";
+import Project from "../component/Project";
+import Contact from "../component/Contact";
+import Footer from "../component/Footer";
 
 const Home = () => {
   return (
@@ -80,9 +84,22 @@ const Home = () => {
         <About />
       </div>
 
-      <div className="service-section">
+      <div className="service-section" id="service">
         <Service />
       </div>
+      <div className="achievement-section">
+        <Achievement />
+      </div>
+      <div className="project-section" id="project">
+        <Project />
+      </div>
+      <div className="contact-section" id="contact">
+        <Contact />
+      </div>
+      <div className="footer-section">
+        <Footer />
+      </div>
+   
     </>
   );
 };
