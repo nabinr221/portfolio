@@ -1,25 +1,26 @@
 import React from "react";
 import Navbar from "../component/Navbar";
 import { CgWebsite } from "react-icons/cg";
-import { BsTelephone, BsFacebook } from "react-icons/bs";
+import { BsTelephone } from "react-icons/bs";
 import { GrPlayFill, GrCertificate } from "react-icons/gr";
-import { Link } from "react-router-dom";
-import {
-  AiOutlineCode,
-  AiOutlineMail,
-  AiFillLinkedin,
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
-import ServiceCard from "../component/cards/ServiceCard";
+import { AiOutlineCode, AiOutlineMail } from "react-icons/ai";
+import Service from "../component/Service";
+import About from "../component/About";
+import Achievement from "../component/Achievement";
+import Project from "../component/Project";
+import Contact from "../component/Contact";
+import Footer from "../component/Footer";
+import Testimonial from "../component/Testimonial";
+import TestimonialCard from "../component/cards/TestimonialCard";
 
 const Home = () => {
   return (
     <>
+      {/* header and landign page done */}
       <div className="container">
         <Navbar />
         <div className="content-section">
-          <div className="">
+          <div className="content-left">
             <div className="intro">
               <div>
                 <h1>👋</h1>
@@ -46,11 +47,14 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <img
-            src="https://themesdesign.in/harold/layout/images/home/home-4/img.png"
-            alt=""
-          />
-          <div className="">
+          <div className="content-middle">
+            <img
+              src="https://themesdesign.in/harold/layout/images/home/home-4/img.png"
+              alt=""
+              id="order-2"
+            />
+          </div>
+          <div className="content-right">
             <div className="describe">
               <span>
                 <GrPlayFill />
@@ -79,69 +83,31 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      {/* about us section */}
       <div className="about-section" id="about">
-        <div className="about-content">
-          <div className="left">
-            <div className="about-img">
-              <img
-                src="https://themesdesign.in/harold/layout/images/about.png"
-                alt=""
-                width={385}
-              />
-            </div>
-          </div>
-          <div className="right">
-            <h1>About Me</h1>
-            <p>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using normal distribution of letters, as opposed to using
-              'Content here, content here', making it look like readable
-              English.
-            </p>
-
-            <div className="social-icon">
-              <span>
-                <Link to="/facebook.com/nabinr221">
-                  <BsFacebook size={30} color="#1877f2" />
-                </Link>
-              </span>
-              <span>
-                <Link to="https://www.linkedin.com/in/nabinr221/">
-                  <AiFillLinkedin size={30} color="#0a66c2" />
-                </Link>
-              </span>
-              <span>
-                <Link to="https://github.com/nabinr221">
-                  <AiFillGithub size={30} />
-                </Link>
-              </span>
-            </div>
-          </div>
-        </div>
+        {/* about us Component */}
+        <About />
       </div>
 
-      <div className="service-section">
-        <div className="service-content">
-          <div className="service-text">
-          
-            <p className="title-p">WHAT WE OFFER</p>
-            <h2>Affordable Services</h2>
-            <p>
-              A Private Limited is the most popular type of partnership Malta.
-              The limited liability is, in fact, the only type of company
-              allowed by Companies.
-            </p>
-          </div>
-          <div className="service-card-grp">
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-            <ServiceCard />
-          </div>
-        </div>
+      <div className="service-section" id="service">
+        <Service />
+      </div>
+      <div className="achievement-section">
+        <Achievement />
+      </div>
+      <div className="project-section" id="project">
+        <Project />
+      </div>
+      <div className="testimonial-section" id="testimonial">
+        <Testimonial />
+
+        {/* <TestimonialCard /> */}
+      </div>
+      <div className="contact-section" id="contact">
+        <Contact />
+      </div>
+      <div className="footer-section">
+        <Footer />
       </div>
     </>
   );
