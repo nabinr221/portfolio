@@ -7,10 +7,10 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-top">
           <div className="footer-info">
-            <h2>
+            <h2 className="">
               Meet <span>Me</span>
             </h2>
-            <p>
+            <p className="p">
               A Private Limited is the most popular type of partnership Malta.
               The limited liability is, in fact, the only type of company
               allowed by Companies.
@@ -66,7 +66,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>© 2023 copyright | Desing by: Nabin R. Chaudhary</p>
+          <p>© 2023 Copyright | Desing by: Nabin R. Chaudhary</p>
         </div>
       </div>
     </>

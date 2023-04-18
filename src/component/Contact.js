@@ -65,7 +65,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-form">
-          <p className="title">Let's talk</p>
+          <p className="title-p b">Let's talk</p>
           <h2>Enter your project details</h2>
           <p>
             Content here, content here', making it look like readable English.

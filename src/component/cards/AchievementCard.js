@@ -1,18 +1,15 @@
 import React from 'react'
 
-const Achievement = () => {
+const Achievement = (props) => {
   return (
     <>
       <div className="counter-card">
         <div className="icon">
-          <img
-            src="https://themesdesign.in/harold/layout/images/counter/heart.png"
-            alt=""
-          />
+          <img src={props.item.img} alt="" />
         </div>
-        <div className="titles">
-          <h1>800k +</h1>
-          <p>Happy Clients</p>
+        <div className="achievements-title">
+          <h2> {props.item.number} +</h2>
+          <p className="">{props.item.title}</p>
         </div>
       </div>
     </>

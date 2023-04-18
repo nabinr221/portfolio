@@ -5,29 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { BiRightArrowAlt } from "react-icons/bi";
 
-// function NextArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{ ...style, display: "block", background: "red" }}
-//       onClick={onClick}
-//     />
-//   );
-// }
-
-// function PrevArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{ ...style,padding:"1rem", background: "" , border:"1px solid blue" }}
-//       onClick={onClick}
-//     />
-//   );
-// }
 
 const Project = () => {
+  
   const settings = {
     infinite: true,
     slidesToShow: 3,
@@ -35,20 +15,42 @@ const Project = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
-    // nextArrow: <NextArrow />,
-    // prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 544,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <>
       <div className="project-content">
         <div className="project-text">
-          <div className="titles">
-            <h2>My Latest Work</h2>
+          <div className="titles  ">
+            <h2 >My Latest Work</h2>
             <p>Prefect solution for digital experience</p>
           </div>
           <div className="more-link">
             <p>
-              More Work <hr />
+              View More <hr />
             </p>
             <span>
               <BiRightArrowAlt size={25} />
