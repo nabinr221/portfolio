@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import {BsFacebook} from "react-icons/bs"
+import { BsFacebook } from "react-icons/bs";
 const About = () => {
   return (
     <>
       <div className="about-content">
-        <div className="left">
+        <div className="left" id="order-2">
           <div className="about-img">
             <img
               src="https://themesdesign.in/harold/layout/images/about.png"
@@ -15,7 +15,7 @@ const About = () => {
             />
           </div>
         </div>
-        <div className="right">
+        <div className="right" id="order-1">
           <h1>About Me</h1>
           <p>
             It is a long established fact that a reader will be distracted by
@@ -27,17 +27,17 @@ const About = () => {
           <div className="social-icon">
             <span>
               <Link to="/facebook.com/nabinr221">
-                <BsFacebook size={30} color="#1877f2" />
+                <BsFacebook color="#1877f2" />
               </Link>
             </span>
             <span>
               <Link to="https://www.linkedin.com/in/nabinr221/">
-                <AiFillLinkedin size={30} color="#0a66c2" />
+                <AiFillLinkedin color="#0a66c2" />
               </Link>
             </span>
             <span>
               <Link to="https://github.com/nabinr221">
-                <AiFillGithub size={30} />
+                <AiFillGithub />
               </Link>
             </span>
           </div>

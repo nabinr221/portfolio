@@ -1,12 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "PT Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
 
 }
 
-body {
-  font-family: 'PT Sans', sans-serif;
+.b {
+  font-weight: 600;
 }
+
+hr {
+  height: 3px;
+  background-color: #717e96;
+}
+
+.btn {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #2fb4ae;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+}
+
+.socail-icon {
+  font-size: 20px;
+  display: flex;
+  gap: 1rem;
+}
+
+.socail-icon span {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2fb4ae;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transition: 0.5s;
+}
+
+.socail-icon span:hover {
+  background-color: #717e96;
+}
+
+.title {
+  width: 40%;
+  margin: 5rem auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title-p {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: normal;
+
+  color: #9a9a9a;
+}
+
+.p {
+  /* margin-bottom: .6rem; */
+  font-size: 1.1rem;
+  color: #9a9a9a;
+}
+
+.h2 {
+  margin-bottom: 0.7rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #1c2f50;
+}
+
+/* .slick-slide{
+    /* width: 500px; */
+/* margin: 0 1rem; */
+/* } */

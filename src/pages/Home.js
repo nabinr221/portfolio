@@ -6,6 +6,12 @@ import { GrPlayFill, GrCertificate } from "react-icons/gr";
 import { AiOutlineCode, AiOutlineMail } from "react-icons/ai";
 import Service from "../component/Service";
 import About from "../component/About";
+import Achievement from "../component/Achievement";
+import Project from "../component/Project";
+import Contact from "../component/Contact";
+import Footer from "../component/Footer";
+import Testimonial from "../component/Testimonial";
+import TestimonialCard from "../component/cards/TestimonialCard";
 
 const Home = () => {
   return (
@@ -14,7 +20,7 @@ const Home = () => {
       <div className="container">
         <Navbar />
         <div className="content-section">
-          <div className="">
+          <div className="content-left">
             <div className="intro">
               <div>
                 <h1>👋</h1>
@@ -41,11 +47,14 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <img
-            src="https://themesdesign.in/harold/layout/images/home/home-4/img.png"
-            alt=""
-          />
-          <div className="">
+          <div className="content-middle">
+            <img
+              src="https://themesdesign.in/harold/layout/images/home/home-4/img.png"
+              alt=""
+              id="order-2"
+            />
+          </div>
+          <div className="content-right">
             <div className="describe">
               <span>
                 <GrPlayFill />
@@ -80,8 +89,25 @@ const Home = () => {
         <About />
       </div>
 
-      <div className="service-section">
+      <div className="service-section" id="service">
         <Service />
+      </div>
+      <div className="achievement-section">
+        <Achievement />
+      </div>
+      <div className="project-section" id="project">
+        <Project />
+      </div>
+      <div className="testimonial-section" id="testimonial">
+        <Testimonial />
+
+        {/* <TestimonialCard /> */}
+      </div>
+      <div className="contact-section" id="contact">
+        <Contact />
+      </div>
+      <div className="footer-section">
+        <Footer />
       </div>
     </>
   );
