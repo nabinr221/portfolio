@@ -1,25 +1,19 @@
 import React from "react";
 import ServiceCard from "./cards/ServiceCard";
-
+import ServiceData from "../config/ServiceData.json";
+import SectionHeading from "./SectionHeading";
 const Service = () => {
   return (
     <>
       <div className="service-content">
-        <div className="title text-center">
-          <p className="title-p b">WHAT WE OFFER</p>
-          <h2 className="h2">Affordable Services</h2>
-          <p className="p">
-            A Private Limited is the most popular type of partnership Malta. The
-            limited liability is, in fact, the only type of company allowed by
-            Companies.
-          </p>
-        </div>
+        <SectionHeading
+          subtitle={"what we offer"}
+          title={"affordable Service"}
+        />
         <div className="service-card-grp">
-          <ServiceCard />
-          <ServiceCard />
-          <ServiceCard />
-          <ServiceCard />
-          <ServiceCard />
+          {ServiceData?.map((item, id) => {
+            return <ServiceCard item={item} key={id} />;
+          })}
         </div>
       </div>
     </>

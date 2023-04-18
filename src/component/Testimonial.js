@@ -4,6 +4,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import SectionHeading from "./SectionHeading";
+import TestimonialData from "../config/TestimonialData.json"
+
 const Testimonial = () => {
   const settings = {
     infinite: true,
@@ -13,7 +16,7 @@ const Testimonial = () => {
     speed: 5000,
     autoplaySpeed: 2000,
     cssEase: "linear",
-   responsive: [
+    responsive: [
       {
         breakpoint: 1024,
         settings: {
@@ -41,21 +44,16 @@ const Testimonial = () => {
   return (
     <>
       <div className="testimonial-content">
-        <div className="title text-center">
-          <p className="title-p b">TESTIMONIAL</p>
-          <h2 className="h2">People talk about us</h2>
-          <p className="p">
-            A Private Limited is the most popular type of partnership Malta. The
-            limited liability is, in fact, the only type of company allowed by
-            Companies.
-          </p>
-        </div>
+        <SectionHeading
+          subtitle={"TESTIMONIAL"}
+          title={"People talk about us"}
+        />
+
         <div className="testimonial-card-grp">
           <Slider {...settings}>
-            <TestimonialCard />
-            <TestimonialCard />
-            <TestimonialCard />
-            <TestimonialCard />
+            {TestimonialData?.map((item, id) => {
+              return <TestimonialCard item={item} key={id} />;
+            })}
           </Slider>
         </div>
       </div>
